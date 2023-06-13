@@ -1,0 +1,121 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: Simvoni;
+  src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+body {
+  font-family: Simvoni;
+}
+
+.imagenFondo {
+  width: 250px;
+  height: 430px;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  margin-top: -25%;
+  margin-left: 1332px;
+}
+
+.h2 {
+  color: #071838;
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.h3 {
+  color: #071838;
+  text-align: center;
+}
+
+.DivForm {
+  color: #071838;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.Inputs {
+  color: #071838;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.Inputs::placeholder {
+  color: black;
+}
+
+.Inputs:focus {
+  outline: none;
+}
+
+.formulario {
+  text-align: center;
+}
+
+.continuar {
+  margin-top: 3%;
+  margin-left: -2%;
+  background-color: #00285c;
+  color: #DCEDEC;
+  font-size: 16px;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+  /* display: none; */
+}
+
+.chat {
+  margin-left: 90%;
+  position: fixed;
+  z-index: 9999;
+  overflow: visible;
+  bottom: 20px;
+  right: 20px;
+}
+
+.swal2-styled.swal2-confirm.my-custom-button-class {
+  color: #52D2BC;
+  background-color: #00285c;
+}
+
+@media only screen and (max-width: 768px) {
+  .imagenFondo{
+    margin-top: -47%;
+    margin-left: 70%;
+    height: 370px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .imagenFondo{
+    margin-top: -74%;
+    margin-left: 60%;
+    height: 360px;
+    width: 200px;
+  }
+
+  .DivForm {
+    color: #071838;
+    width: 60%;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    
+  }
+}

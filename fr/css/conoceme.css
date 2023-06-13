@@ -1,0 +1,97 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Simvoni;
+    src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Simvoni;
+    background-color: #DCEDEC;
+}
+
+.chat {
+    margin-left: 90%;
+    position: fixed;
+    z-index: 9999;
+    overflow: visible;
+    bottom: 20px;
+    right: 20px;
+}
+
+h1 {
+    color: #071838;
+    margin-top: 3%;
+}
+
+.texto {
+    font-family: Simvoni;
+    width: 590px;
+    height: 600px;
+    margin-left: 50%;
+    text-align: left;
+    justify-content: center;
+    color: #071838;
+}
+
+.imagenFondo {
+    width: 60%;
+    height: 730px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 0%;
+    margin-top: -3%;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .texto {
+        font-family: Simvoni;
+        width: 450px;
+        height: 750px;
+        margin-left: 41%;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .imagenFondo {
+        width: 340px;
+        height: 500px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 0%;
+        margin-top: 40%;
+    }
+
+}
+
+/* MOVIL */
+@media (max-width: 480px) {
+
+    .texto {
+        font-family: Simvoni;
+        width: 320px;
+        height: 1200px;
+        margin-left: 0%;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .imagenFondo {
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 30%;
+        margin-top: 196%;
+    }
+
+}

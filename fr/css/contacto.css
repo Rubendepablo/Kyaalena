@@ -1,0 +1,266 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Simvoni;
+    src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Simvoni;
+    background-color: #071838;
+}
+
+.container {
+    height: 100%;
+}
+
+.transparencia {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 109%;
+    z-index: 0;
+    background-color: #bb77c6d4;
+}
+
+.chat {
+    margin-left: 90%;
+    position: fixed;
+    z-index: 9999;
+    overflow: visible;
+    bottom: 20px;
+    right: 20px;
+}
+
+.imagenFondo {
+    width: 60%;
+    height: 828px;
+    margin-left: -248px;
+    padding-block-start: 90px;
+    margin-block-start: 22px;
+}
+
+
+.frase {
+    font-size: 45px;
+    font-family: Simvoni;
+    color: #071838;
+    z-index: 3;
+}
+
+.conversar {
+    top: 130px;
+    right: 173px;
+    position: absolute;
+    font-weight: 700;
+    font-style: italic;
+    z-index: 3;
+}
+
+.datos {
+    position: absolute;
+    top: 192px;
+    right: 169px;
+    font-size: 23px;
+}
+
+td {
+    display: flex;
+    flex-direction: column;
+    padding-block-end: 28px;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-img {
+    height: 517px;
+    position: absolute;
+    right: 172px;
+    top: 272px;
+}
+
+.bloque {
+    position: absolute;
+    right: 215px;
+    top: 366px;
+    z-index: 995;
+    font-weight: 700;
+}
+
+.texto {
+    color: #071838;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.Inputs {
+    color: #071838;
+    margin: 10px 10px 10px 0;
+    width: 320px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.Inputs::placeholder {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.Inputs:focus {
+    outline: none;
+}
+
+#prefijo {
+    color: #071838;
+    background-color: #DCC5DD;
+    border: none;
+    border-bottom: 1px solid #071838;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Simvoni;
+    width: 64px;
+    display: flex;
+    flex-direction: row;
+}
+
+#prefijo::after {
+    content: "";
+    background-image: url("../img/contacto/flecha.png");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-enviar {
+    padding: 6px;
+    position: absolute;
+    top: 695px;
+    right: 320px;
+    background-color: #00285c;
+    color: #DCEDEC;
+    font-size: 16px;
+    padding: 5px;
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+    z-index: 999;
+}
+
+.swal2-styled.swal2-confirm.my-custom-button-class {
+    color: #52D2BC;
+    background-color: #00285c;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .imagenFondo {
+        width: 441px;
+        margin-left: -118px;
+    }
+
+    .frase.conversar {
+        font-size: 39.5px;
+        right: 100px;
+    }
+
+    .datos {
+        font-size: 20px;
+        right: 100px;
+    }
+
+    .form-img {
+        width: 509px;
+        height: 487px;
+        right: 30px;
+        top: 232px;
+    }
+
+    .bloque {
+        right: 105px;
+        top: 321px;
+    }
+
+    .Inputs {
+        width: 240px;
+    }
+
+    .btn-enviar {
+        top: 638px;
+        right: 244px;
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
+}
+
+/* MOVIL */
+@media (max-width: 480px) {
+    .imagenFondo {
+        width: 441px;
+        margin-left: -118px;
+    }
+
+    .frase.conversar {
+        font-size: 32px;
+        right: 34px;
+    }
+
+    .datos {
+        font-size: 16px;
+        right: 37px;
+    }
+
+    .form-img {
+        height: 429px;
+        right: -55px;
+        top: 232px;
+    }
+
+    .bloque {
+        right: 21px;
+        top: 321px;
+    }
+
+    .Inputs {
+        width: 327px;
+    }
+
+    .btn-enviar {
+        top: 619px;
+        right: 154px;
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
+}

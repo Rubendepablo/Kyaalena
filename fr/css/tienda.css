@@ -1,0 +1,251 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Simvoni;
+    src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+* {
+    font-family: Simvoni;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    padding-block-start: 20px;
+    padding-inline-start: 47px;
+    padding-block-end: 20px;
+    font-size: 50px;
+}
+
+.chat {
+    margin-left: 90%;
+    position: fixed;
+    z-index: 9999;
+    overflow: visible;
+    bottom: 20px;
+    right: 20px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    background-image: url("../img/elementos/53.svg"), url("../img/elementos/05.svg");
+    background-repeat: repeat-y, repeat-y;
+    background-position: left top, right top;
+    background-size: contain, cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #DCEDEC;
+}
+
+.alert {
+    padding: 10px;
+    background-color: #efe3f0;
+    border: 1px solid #BC77C6;
+    color: #071838;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.alert a {
+    color: #071838;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 89;
+    position: relative;
+}
+
+.talla {
+    margin-bottom: 20px;
+
+}
+
+.col-5 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 40px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fcf8fc;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 433px;
+    object-fit: cover;
+}
+
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+.proximamente{
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 34px;
+    padding-block-start: 106px;
+    padding-block-end: 20px;
+}
+
+.agregar {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out;
+    background-color: #071838;
+    width: 100%;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #97E0D4;
+    color: #071838;
+    width: 100%;
+    cursor: pointer;
+}
+.boton-s{
+    width: 40%;
+    height: 52px;
+}
+.boton-s:hover {
+    background-color: #151c29;
+    color: #071838;
+    width: 40%;
+    cursor: pointer;
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+label{
+    padding-inline-end: 10px;
+}
+#talla {
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #DCC5DD;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #071838;
+    width: 70px;
+    cursor: pointer;
+}
+
+#talla:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#talla option {
+    background-color: #DCC5DD;
+    color: #071838;
+    border: none;
+    border-radius: 4px;
+} 
+
+/* Estilos específicos para dispositivos móviles */
+
+@media (max-width: 767px) {
+    .card {
+      width: 100%;
+    }
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+    .proximamente{
+        position: inherit;  
+        left: 128px;
+        text-align: unset;
+
+    }
+  }
+  
+/* Estilos específicos para pantallas medianas */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .proximamente{
+        position: inherit;  
+        left: 0;
+        text-align: unset;
+
+    }
+  }
+  
+  /* Estilos específicos para dispositivos móviles y pantallas medianas */
+  
+  @media (max-width: 991px) {
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .col-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }

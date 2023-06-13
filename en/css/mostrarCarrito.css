@@ -1,0 +1,238 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Simvoni;
+    src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+* {
+    font-family: Simvoni;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block-end: 20px;
+}
+
+.center-table {
+    margin: auto;
+}
+
+.title {
+    font-size: 25px;
+    padding-block-end: 15px;
+    padding-inline-start: 97px;
+}
+
+.table {
+    width: 90%;
+    border-collapse: collapse;
+    border: 3px solid #ffffff;
+    color: #071838;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 3px solid #ffffff;
+    background-color: #DCEDEC;
+}
+
+th {
+    text-align: left;
+    background-color: #52D2BC;
+}
+
+.table-container table tbody tr:last-child {
+    background-color: #f5f5f5;
+    /* Cambia el color a tu preferencia */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c82333;
+}
+
+.btn:active {
+    background-color: #bd2130;
+}
+
+.alert {
+    padding: 8px;
+    background-color: #DCEDEC;
+    border: 1px solid #DCEDEC;
+    color: #00285c;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.text-muted{
+    margin-bottom: 80px;
+
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.form-control::placeholder {
+    color: #818fa7;
+}
+
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out;
+    background-color: #00285c;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #97E0D4;
+    color: #071838;
+    width: 100%;
+    cursor: pointer;
+}
+
+button.btn-danger[type="submit"] {
+    background-color: #00285c;
+    color: white;
+    cursor: pointer;
+}
+
+button.btn-danger[type="submit"]:hover {
+    background-color: #cdd8e6;
+    color: #071838;
+    cursor: pointer;
+}
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 992px) {
+    .container-box {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 20px;
+      padding-inline-start: 20px;
+    }
+  
+    .table {
+      padding-inline-end: 10px;
+      padding-inline-start: 10px;
+    }
+  
+    .btn-danger {
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Estilos para pantallas móviles */
+  @media only screen and (max-width: 576px) {
+    .container-box {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 18px;
+      padding-inline-start: 10px;
+    }
+  
+    .table {
+      width: 100%;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+    }
+  
+    .btn-danger {
+      padding: 4px 8px;
+    }
+  
+    .alert {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .form-control {
+      font-size: 0.9rem;
+    }
+  
+    button[type="submit"] {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 450px) {
+    .container-box {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 14px;
+      padding-inline-start: 10px;
+    }
+  
+    .table {
+      width: 100%;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      font-size: 13px;
+    }
+  
+    .btn-danger {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  
+    .alert {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .form-control {
+      font-size: 0.8rem;
+    }
+  
+    button[type="submit"] {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+    }
+  }

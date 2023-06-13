@@ -1,0 +1,335 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: Simvoni;
+  src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+body {
+  font-family: Simvoni;
+}
+
+.imagenFondo1 {
+  width: 80%;
+  position: absolute;
+  top: -30%;
+  left: -68%;
+  background-size: cover;
+  z-index: -2;
+}
+
+.imagenFondo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  z-index: -1;
+}
+
+.contRegistro {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 0%;
+}
+
+.bloque {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: 46%;
+  margin-top: 1%;
+  margin-bottom: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.tabla {
+  transform: translate(50%, 50%);
+  justify-items: center;
+  align-items: center;
+}
+
+.prefijo {
+  width: 50px;
+  position: relative;
+  margin-top: -25%;
+  margin-left: 0%;
+  border: none;
+  border-bottom: 1px solid #071838;
+}
+
+.hidden {
+  width: 30px;
+  visibility: hidden;
+}
+
+.Inputs {
+  color: #071838;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid #071838;
+}
+
+.Inputs::placeholder {
+  color: black;
+}
+
+.Inputs:focus {
+  outline: none;
+}
+
+.BotonEnviarRegistro {
+  background-color: #071838;
+  margin-left: 46%;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #071838;
+  margin-top: 2%;
+  margin-left: 23%;
+}
+
+.contNoticiasyPoliticas {
+  width: 350px;
+  margin-left: 46%;
+}
+
+.noticias {
+  color: #071838;
+  padding-bottom: 6%;
+  margin-left: 5px;
+}
+
+.politicas {
+  color: #071838;
+  margin-left: 2px;
+}
+
+.buttonPoliticas {
+  display: inline-block;
+  position: absolute;
+  margin-left: 3%;
+  margin-top: -1.5%;
+  border-radius: 20px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  position: absolute;
+  margin-left: 3%;
+  margin-top: -0.5%;
+  border-radius: 20px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.buttonPoliticas input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.button input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.buttonPoliticas input[type="checkbox"]+label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 26px;
+  background-color: #a3daf1;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.button input[type="checkbox"]+label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 0px 26px;
+  background-color: #a3daf1;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.buttonPoliticas input[type="checkbox"]+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #071838;
+  margin-left: -26px;
+  transition: transform 0.3s;
+}
+
+.button input[type="checkbox"]+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #071838;
+  margin-left: -26px;
+  transition: transform 0.3s;
+}
+
+.buttonPoliticas input[type="checkbox"]:checked+label {
+  background-color: #071838;
+}
+
+.button input[type="checkbox"]:checked+label {
+  background-color: #071838;
+}
+
+.buttonPoliticas input[type="checkbox"]:checked+label:before {
+  transform: translateX(100%);
+}
+
+.button input[type="checkbox"]:checked+label:before {
+  transform: translateX(100%);
+}
+
+.BotonEnviarRegistro {
+  padding: 4px;
+  background-color: #00285c;
+  color: #DCEDEC;
+  font-size: 16px;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.chat {
+  margin-left: 90%;
+  position: fixed;
+  z-index: 9999;
+  overflow: visible;
+  bottom: 20px;
+  right: 20px;
+}
+
+.swal2-styled.swal2-confirm.my-custom-button-class {
+  color: #52D2BC;
+  background-color: #00285c;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .contRegistro {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 500px;
+    width: 90%;
+  }
+
+  .bloque {
+    margin-top: 15%;
+    margin-left: 0%;
+    margin-top: 5%;
+    width: 700px;
+    height: 200px;
+  }
+
+  .tabla {
+    transform: none;
+    justify-items: unset;
+    align-items: unset;
+  }
+
+  .imagenFondo {
+    margin-top: -6%;
+    margin-left: 0%;
+  }
+
+  .imagenFondo1 {
+    margin-top: 50%;
+  }
+
+  .BotonEnviarRegistro,
+  h2 {
+    margin-left: 0%;
+  }
+
+  .contNoticiasyPoliticas {
+    margin-left: 0%;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .button,
+  .buttonPoliticas {
+    margin-left: 5%;
+    margin-top: -10px;
+  }
+}
+
+/* móviles */
+@media only screen and (max-width: 480px) {
+
+  .contRegistro {
+    margin-left: 0%;
+    width: 100%;
+    height: 580px;
+  }
+
+  h2 {
+    margin-left: 10%;
+  }
+
+  .bloque {
+    margin-top: 20%;
+    margin-left: 0%;
+    height: 150px;
+    width: 470px;
+  }
+
+  .imagenFondo1 {
+    margin-top: 70%;
+    margin-left: 0%;
+  }
+
+  .imagenFondo {
+    margin-top: 27%;
+    margin-left: 0%;
+  }
+
+  .contNoticiasyPoliticas {
+    margin-left: 0%;
+    width: 80%;
+  }
+
+  .button,
+  .buttonPoliticas {
+    margin-left: 5%;
+    margin-top: -10px;
+  }
+
+  .BotonEnviarRegistro {
+    margin-left: 0%;
+  }
+}

@@ -1,0 +1,414 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../Tipografias/JetbrainsMono/ttf/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Simvoni;
+    src: url('../Tipografias/simvoni/Simvoni-d9vV6.otf'), url('../Tipografias/simvoni/SimvoniBold-w1dOn.otf'), url('../Tipografias/simvoni/SimvoniBoldItalic-7BXvl.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Simvoni;
+}
+
+.chat {
+    margin-left: 90%;
+    position: fixed;
+    z-index: 9999;
+    overflow: visible;
+    bottom: 20px;
+    right: 20px;
+}
+
+.plataformas {
+    height: 25%;
+    width: 100%;
+    background-color: #BC77C6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px; /* Ajusta el espacio entre las columnas */
+}
+
+.disponible {
+    margin-top: 10%;
+    color: #DCC5DD;
+    font-size: 40px;
+    margin-left: 14%;
+    margin-bottom: 10%;
+    grid-column: 1 ; /* Primera columna */
+}
+
+.youtube {
+    margin-top: 10%;
+    width: 200px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    position: relative;
+    grid-column: 2 / span 1; /* Segunda columna */
+    grid-row: 1 / span 1;
+}
+
+.linkYoutube{
+    position: absolute;
+    top: 90%;
+    height: 10%;
+    left: 40%;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    color: #071838;
+}
+
+.spotify {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 200px;
+    margin-left: 10%;
+    position: relative;
+    grid-column: 3 / span 1;/* Tercera columna */
+    grid-row: 1 / span 1;
+}
+
+.linkSpoty{
+    position: absolute;
+    top: 90%;
+    height: 10%;
+    left: 71%;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    color: #071838;
+}
+
+.acerca {
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: start;
+    grid-row-gap: 20px;
+}
+
+.titulos1 {
+    color: #071838;
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: 11%;
+    margin-top: 8%;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.parrafo1 {
+    color: #071838;
+    grid-area: 2 / 1 / 3 / 2;
+    margin-left: 21%;
+    margin-top: -120px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.audifonos {
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: end;
+    width: 500px;
+    height: 450px;
+}
+
+.separador {
+    width: 100%;
+    height: 20px;
+    background-color: #BC77C6;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+
+.unete {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.invitacion {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin-top: 8%;
+    width: 500px;
+    height: 450px;
+}
+
+.titulos2 {
+    color: #071838;
+    grid-column: 2 / span 2;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 10%;
+    margin-left: -100px;
+}
+
+.parrafo2 {
+    color: #071838;
+    grid-column: 2 / span 2;
+    font-size: 25px;
+    margin-top: -50px;
+    line-height: 1.5;
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+.telegram {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    margin-bottom: 4%;
+    margin-left: -100px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.discord {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    margin-bottom: 4%;
+    margin-left: -100px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.grupovip1 {
+    position: absolute;
+    top: 212%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    color: #071838;
+}
+
+.grupovip2 {
+    color: #071838;
+    position: absolute;
+    top: 212%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+/* tablet  768 * 659*/
+@media only screen and (max-width: 768px) {
+    .chat {
+        right: 25px;
+        width: 40px;
+    }
+
+    .disponible {
+        font-size: 25px;
+    }
+    
+    .youtube {
+        width: 120px;
+        margin-left: 25%;
+    }
+
+    .linkYoutube{
+        top: 60%;
+        left: 42%;
+        height:7%;
+        width: 125px;
+    }    
+    
+    .spotify {
+        width: 120px;
+        margin-left: 30%;
+    }
+
+    .linkSpoty{
+        top: 60%;
+        left: 78%;
+        height:7%;
+        width: 125px;
+    }
+
+    .acerca {
+        grid-row-gap: 15px;
+    }
+    
+    .titulos1 {        
+        font-size: 25px;
+    }
+    
+    .parrafo1 {
+        margin-left: 22%;
+        margin-top: -120px;
+        font-size: 18px;
+    }
+    
+    .audifonos {
+        width: 400px;
+        height: 350px;
+    }
+
+    .unete {
+        grid-row-gap: 15px;
+    }
+    
+    .invitacion {
+        width: 400px;
+        height: 350px;
+    }
+    
+    .titulos2 {
+        margin-top: 25px;
+        font-size: 25px;
+        margin-left: -100px;
+    }
+    
+    .parrafo2 {
+        font-size: 18px;
+        margin-top: -70px;
+    }
+    
+    .telegram {
+        width: 170px;
+        margin-top: -50px;
+    }
+    
+    .discord {
+        width: 170px;
+        margin-top: -50px;
+    }
+    
+    .grupovip1 {
+        top: 168%;
+        left: 52%;
+        font-size: 18px;
+    }
+    
+    .grupovip2 {
+        top: 168%;
+        left: 78%;
+        font-size: 18px;
+    }
+    
+}
+
+/* móviles 480 * 659*/ 
+@media only screen and (max-width: 480px) {
+    .chat {
+        right: 75px;
+        width: 35px;
+    }
+
+    .disponible {
+        font-size: 15px;
+    }
+    
+    .youtube {
+        width: 80px;
+        margin-left: 25%;
+    }
+
+    .linkYoutube{
+        top: 42%;
+        left: 42%;
+        height:3%;
+        width: 75px;
+    }   
+    
+    .spotify {
+        width: 80px;
+        margin-left: 30%;
+    }
+
+    .linkSpoty{
+        top: 42%;
+        left: 78%;
+        height:3%;
+        width: 75px;
+    }
+
+    .acerca {
+        grid-row-gap: 10px;
+    }
+    
+    .titulos1 {        
+        font-size: 15px;
+    }
+    
+    .parrafo1 {
+        margin-left: 35%;
+        margin-top: -120px;
+        font-size: 12px;
+    }
+    
+    .audifonos {
+        width: 300px;
+        height: 350px;
+    }
+
+    .unete {
+        grid-row-gap: 10px;
+    }
+    
+    .invitacion {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .titulos2 {
+        margin-top: 25px;
+        font-size: 15px;
+        margin-left: -100px;
+    }
+    
+    .parrafo2 {
+        font-size: 12px;
+        margin-top: -70px;
+        margin-left: -100px;
+        margin-right: 100px;
+    }
+    
+    .telegram {
+        width: 100px;
+        margin-top: -70px;
+    }
+    
+    .discord {
+        width: 100px;
+        margin-bottom: 4%;
+        margin-top: -70px;
+    }
+    
+    .grupovip1 {
+        top: 140%;
+        left: 55%;
+        font-size: 11px;
+    }
+    
+    .grupovip2 {
+        top: 140%;
+        left: 82%;
+        font-size: 11px;
+    }
+    
+}
